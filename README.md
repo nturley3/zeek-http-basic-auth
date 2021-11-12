@@ -21,7 +21,7 @@ See the [Zeek Package Manager Docs](https://docs.zeek.org/projects/package-manag
 
 ## Configuration
 
-The config.zeek file gives Zeek admins the option to log passwords.
+The config.zeek file gives Zeek admins the option to log passwords and to check only local networks.
 
 ## Generated Outputs
 
