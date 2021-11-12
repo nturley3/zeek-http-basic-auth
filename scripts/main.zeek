@@ -1,4 +1,4 @@
-##! Zeek script is used to detect HTTP basic authentication servers on campus
+##! Zeek script is used to detect HTTP basic authentication servers.
 
 module HTTPBasicAuth;
 
