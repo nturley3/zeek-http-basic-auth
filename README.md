@@ -1,5 +1,5 @@
-HTTP Basic Authentication Detection
-======================
+# HTTP Basic Authentication Detection
+
 ## Purpose
 Zeek module which detects the usage of Basic Authentication on HTTP services. 
 
@@ -19,14 +19,23 @@ See the [Zeek Package Manager Docs](https://docs.zeek.org/projects/package-manag
 
 ## Configuration
 
+The config.zeek file gives Zeek admins the option to log passwords.
 
-## Usage
-
+## Generated Outputs
 
 This script generates the following notices: 
 
-**HTTPBasicAuth::Found** - This indicates that an HTTP server was
-seen using HTTP Basic authentication.
+| Notice Name | Description |
+| -- | -- |
+| HTTPBasicAuth::Found | This indicates that an HTTP server was seen using HTTP Basic authentication. |
+
+## Usage
+
+Web applications using Basic Authentication tend to have less robust security. Often this authentication type is employed on IOT devices, servers with minimal security controls, or on development infrastructure. These also tend to use local accounts with no minimal password controls, no anti-brute force measures, and multi-factor authentication. The data this script produces clues in security analysts to potential security weak points.
+
+This package pairs well with the [Zeek Pwned Credential](https://github.com/nturley3/zeek-pwned-credentials) package.
+
+Tags: Threat hunting, hygiene
 
 ## About
 
