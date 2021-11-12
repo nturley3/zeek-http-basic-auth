@@ -12,7 +12,7 @@ export {
 event http_header(c: connection, is_orig: bool, name: string, value: string)
 {
         # This is a processing efficiency tactic here. Return early from the event.
-        if(!Site::is_local_addr(c$id$resp_h) && check_only_local_net==T) {
+        if(!Site::is_local_addr(c$id$resp_h) && HTTP::check_only_local_net==T) {
             return;
         }
 
