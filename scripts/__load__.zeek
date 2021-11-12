@@ -1,2 +1,3 @@
-@load ./main.zeek
 @load ./config.zeek
+@load ./main.zeek
+
