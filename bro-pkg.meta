@@ -1,5 +1,0 @@
-[package]
-description = Detects HTTP systems using Basic authentication
-tags = http, auth
-script_dir = scripts
-version = 1.0.3
