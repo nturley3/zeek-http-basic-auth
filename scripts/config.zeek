@@ -7,4 +7,4 @@ redef HTTP::default_capture_password = T;
 ## Set this to True if you only want to check traffic destined to your define local networks regardless of origin.
 ## Set this to false if you want to check traffic destined to any network regardless of origin.
 ## Recommend setting this to "T" to consume fewer resources for Zeek clusters, but "F" if running on a pcap file. 
-const HTTP::check_only_local_net: bool = F;
+const check_only_local_net: bool = F;
